@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
     <link rel="preload" src="/values.png">
     <link rel="preload" src="/assets/SittingSquirrel.jpg">
     <style>
+        /* Rishabh H, 7-A, A-13*/
         td {
             width: 300px;
             height: 200px;
@@ -23,13 +23,20 @@
             text-decoration:underline;
         }
         p{width:200px;}
+        label, input[type="date"] {
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+        }
+        :root, body {
+            background-color: #dab3fc;
+        }
     </style>
 </head>
 <body>
+    <!-- Rishabh H, 7-A, A-13 -->
     <table>
         <tr>
             <td>
-                <img src="values.jpg" width="200" height="180">
+                <img src="values.png" width="200" height="180">
             </td>
             <td>
                 <h2>Digital Well-Being</h2>
@@ -43,7 +50,7 @@
                 </ul>
             </td>
             <td>
-                <!-- Placeholder for https://www.commonsense.org/sites/default/files/pdf/2025-06/tech-values-slides-v2.pdf -->
+                <iframe src="https://www.commonsense.org/sites/default/files/pdf/2025-06/tech-values-slides-v2.pdf" width="100%"></iframe>
             </td>
         </tr>
         <tr>
@@ -56,7 +63,13 @@
                     choices about how you engage with technology.</u>
                 </p>
             </td>
-            <td></td>
+            <td>
+                <form>
+                    <input type="text" placeholder="Enter Name"><br>
+                    <label><b>Date</b></label> <input type="date"><br>
+                    <input type="submit">
+                </form>
+            </td>
         </tr>
     </table>
 </body>
